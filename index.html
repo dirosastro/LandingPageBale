@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bale Pulsa - Aplikasi Transaksi Agen Tercepat</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-primary fw-bolder fs-3" href="#">Bale Pulsa</a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center mt-3 mt-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-dark hover-primary" href="#fitur">Fitur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-dark hover-primary" href="#keunggulan">Keunggulan</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#login"
+                            class="btn btn-primary px-4 fw-bold rounded-pill w-100 shadow-sm hover-lift">Login Agen</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-white position-relative overflow-hidden py-5">
+        <!-- Floating shape background -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 hero-blob opacity-25 z-0"
+            style="background: radial-gradient(circle at top left, #fff5ec 0%, transparent 60%); pointer-events: none;">
+        </div>
+
+        <div class="container py-5 position-relative z-1 pt-lg-5 pb-lg-5">
+            <div class="row align-items-center mb-5 pb-lg-5">
+                <div class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-start">
+                    <span
+                        class="badge bg-primary-subtle text-primary-emphasis px-3 py-2 rounded-pill fw-semibold mb-3 border border-primary-subtle shadow-sm animate-fade-in">👋
+                        Selamat Datang Calon Agen</span>
+                    <h1 class="display-4 fw-bolder mb-4 lh-base text-dark text-balance">Satu aplikasi untuk semua <span
+                            class="text-primary position-relative d-inline-block">transaksi<svg
+                                class="position-absolute w-100 h-25 start-0 bottom-0 text-primary opacity-25"
+                                style="transform: translateY(5px);" viewBox="0 0 100 20" preserveAspectRatio="none">
+                                <path d="M0,10 Q50,20 100,10" stroke="currentColor" stroke-width="8" fill="none" />
+                            </svg></span></h1>
+                    <p class="lead text-secondary mb-5 pe-lg-5 text-balance">Pulsa, paket data, listrik, dan lainnya.
+                        Sistem stabil, proses super cepat, dan siap dipakai kapan saja.</p>
+                    <a href="#daftar"
+                        class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow-lg mb-4 hover-lift d-inline-block">Download
+                        Sekarang</a>
+
+                    <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mt-2">
+                        <span
+                            class="badge bg-white text-dark shadow-sm border px-3 py-2 fs-6 rounded-pill d-flex align-items-center"><span
+                                class="fs-5 me-2">💰</span> Margin Besar</span>
+                        <span
+                            class="badge bg-white text-dark shadow-sm border px-3 py-2 fs-6 rounded-pill d-flex align-items-center"><span
+                                class="fs-5 me-2">⚡</span> Kilat</span>
+                        <span
+                            class="badge bg-white text-dark shadow-sm border px-3 py-2 fs-6 rounded-pill d-flex align-items-center"><span
+                                class="fs-5 me-2">📊</span> Real-time Dashboard</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center position-relative">
+                    <div
+                        class="position-absolute top-50 start-50 translate-middle w-75 h-75 bg-primary rounded-circle opacity-10 filter-blur">
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1620912189868-30788f8df4f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="App Preview"
+                        class="img-fluid rounded-4 shadow-lg hero-img position-relative z-1 border border-white border-4"
+                        style="max-height: 550px; object-fit: cover;">
+                    <!-- Floating badge -->
+                    <div class="position-absolute top-0 end-0 translate-middle p-3 bg-white rounded-4 shadow-lg border z-2 hover-tilt"
+                        style="margin-top: 50px; margin-right: 20px;">
+                        <h5 class="fw-bold mb-0 text-primary d-flex align-items-center gap-2"><span
+                                class="fs-3">🕒</span> 24 Jam</h5>
+                        <small class="text-muted fw-medium mt-1 d-block">Non-stop Server</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fitur Utama -->
+    <section id="fitur" class="py-5 bg-light position-relative">
+        <div class="container py-5 mt-3 mb-3">
+            <div class="text-center mb-5">
+                <span class="text-primary fw-bold text-uppercase tracking-wide small">Fasilitas Lengkap</span>
+                <h2 class="fw-bolder mt-2 display-6 text-dark tracking-tight">Fitur Utama</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm feature-card rounded-4 bg-white overflow-hidden">
+                        <div class="card-body p-4 p-xl-5">
+                            <div class="feature-icon bg-primary-subtle text-primary rounded-4 mb-4 d-inline-flex align-items-center justify-content-center border border-primary-subtle shadow-sm"
+                                style="width: 70px; height: 70px; font-size: 30px;">
+                                📱
+                            </div>
+                            <h3 class="h4 fw-bold mb-3 text-dark">Pulsa & Paket Data</h3>
+                            <p class="text-secondary mb-0 fw-medium">Semua operator tersedia. Transaksi instan masuk ke
+                                pelanggan tanpa delay atau pending lama.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm feature-card rounded-4 bg-white overflow-hidden">
+                        <div class="card-body p-4 p-xl-5">
+                            <div class="feature-icon bg-primary-subtle text-primary rounded-4 mb-4 d-inline-flex align-items-center justify-content-center border border-primary-subtle shadow-sm"
+                                style="width: 70px; height: 70px; font-size: 30px;">
+                                💳
+                            </div>
+                            <h3 class="h4 fw-bold mb-3 text-dark">PPOB Lengkap</h3>
+                            <p class="text-secondary mb-0 fw-medium">Bayar tagihan listrik PLN, BPJS, PDAM, Token, Top
+                                up e-wallet dengan mudah dalam satu layar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm feature-card rounded-4 bg-white overflow-hidden">
+                        <div class="card-body p-4 p-xl-5">
+                            <div class="feature-icon bg-primary-subtle text-primary rounded-4 mb-4 d-inline-flex align-items-center justify-content-center border border-primary-subtle shadow-sm"
+                                style="width: 70px; height: 70px; font-size: 30px;">
+                                💼
+                            </div>
+                            <h3 class="h4 fw-bold mb-3 text-dark">Deposit Fleksibel</h3>
+                            <p class="text-secondary mb-0 fw-medium">Isi saldo kapan saja melalui berbagai metode bank
+                                atau gerai ritel modern di seluruh Indonesia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kenapa Pilih Kami -->
+    <section id="keunggulan" class="py-5 position-relative bg-white pb-0">
+        <div class="container pt-5">
+            <div class="bg-dark rounded-5 p-4 p-md-5 shadow-lg position-relative overflow-hidden benefits-section mb-n5"
+                style="transform: translateY(50px); z-index: 10;">
+                <!-- Decorative element -->
+                <div class="position-absolute top-0 end-0 opacity-25 shape-rotate"
+                    style="transform: translate(20%, -30%);">
+                    <svg width="600" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#ff7a00"
+                            d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,81.3,-46.3C90.8,-33.5,96.8,-18,97,-2.4C97.1,13.2,91.3,28.9,81.4,41.4C71.5,53.8,57.5,63.1,42.7,71.6C27.9,80.1,12.3,87.8,-3.1,89.5C-18.5,91.2,-37,86.9,-51.9,78C-66.8,69,-78.2,55.5,-85.2,40.1C-92.2,24.7,-94.7,7.4,-92,-9.3C-89.2,-25.9,-81.1,-41.9,-70,-54.6C-58.9,-67.3,-44.7,-76.7,-30.2,-81.9C-15.7,-87.1,-0.9,-88.2,14.2,-85.4C29.3,-82.5,44.7,-76.4,44.7,-76.4Z"
+                            transform="translate(100 100)" />
+                    </svg>
+                </div>
+
+                <div class="text-center position-relative z-1 mb-5 pt-3">
+                    <span class="text-primary fw-bold text-uppercase tracking-wide small">Keuntungan Jualan</span>
+                    <h2 class="fw-bolder mt-2 display-6 text-white tracking-tight">Kenapa Pilih Kami?</h2>
+                </div>
+
+                <div class="row g-5 position-relative z-1 text-center pb-4">
+                    <div class="col-md-4">
+                        <div class="d-inline-flex bg-white bg-opacity-10 rounded-circle p-4 mb-4 glow-effect shadow-sm">
+                            <span class="fs-1">💵</span>
+                        </div>
+                        <h3 class="h4 fw-bold text-white mb-3">Margin Kompetitif</h3>
+                        <p class="text-white-50 px-lg-3 lh-relaxed">Harga modal khusus agen sangat rendah sehingga
+                            keuntungan lebih maksimal.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-inline-flex bg-white bg-opacity-10 rounded-circle p-4 mb-4 glow-effect shadow-sm">
+                            <span class="fs-1">🔄</span>
+                        </div>
+                        <h3 class="h4 fw-bold text-white mb-3">Transaksi 24 Jam</h3>
+                        <p class="text-white-50 px-lg-3 lh-relaxed">Sistem berjalan otomatis kapan saja tanpa batas
+                            waktu, bahkan dini hari.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-inline-flex bg-white bg-opacity-10 rounded-circle p-4 mb-4 glow-effect shadow-sm">
+                            <span class="fs-1">⚡</span>
+                        </div>
+                        <h3 class="h4 fw-bold text-white mb-3">Aplikasi Ringan</h3>
+                        <p class="text-white-50 px-lg-3 lh-relaxed">Performa mulus dan lancar, sangat hemat kuota saat
+                            digunakan setiap hari.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="daftar" class="py-5 bg-light pb-5 pt-pill" style="padding-top: 100px !important;">
+        <div class="container py-5 text-center px-lg-4 mt-2">
+            <div
+                class="py-5 px-3 px-sm-5 bg-primary bg-opacity-10 rounded-5 border border-primary border-opacity-25 shadow-sm custom-cta-bg position-relative overflow-hidden mb-3">
+                <div class="position-relative z-1 py-4">
+                    <h2 class="fw-bolder display-5 mb-4 text-dark tracking-tight">Siap Jadi Agen dan <span
+                            class="text-primary">Mulai Cuan?</span></h2>
+                    <p class="lead text-secondary mb-5 max-w-lg mx-auto fw-medium" style="max-width: 600px;">Pendaftaran
+                        100% gratis dan proses sangat cepat. Gabung sekarang juga dan nikmati untung berjualan setiap
+                        hari bersama Bale Pulsa.</p>
+                    <a href="#"
+                        class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-bold shadow-lg hover-lift">Download
+                        Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-white text-center text-secondary border-top">
+        <div class="container py-3">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="fw-bolder fs-5 text-dark mb-3 mb-md-0 d-flex align-items-center"><span
+                        class="fs-3 me-2">🏕️</span> Bale <span class="text-primary ms-1">Pulsa</span></div>
+                <p class="mb-0 fw-medium">© 2026 Bale Pulsa. Server stabil & transaksi aman.</p>
+                <div class="d-flex gap-4 mt-3 mt-md-0 fw-semibold">
+                    <a href="#" class="text-secondary hover-primary text-decoration-none transition-base">Privacy</a>
+                    <a href="#" class="text-secondary hover-primary text-decoration-none transition-base">Terms</a>
+                    <a href="#" class="text-secondary hover-primary text-decoration-none transition-base">Bantuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+/* Bale Pulsa Custom Styles (Overriding and Extending Bootstrap 5) */
+
+:root {
+    --primary-color: #ff7a00;
+    --primary-hover: #e06a00;
+    --primary-subtle: #fff5ec;
+    --border-subtle: #ffe0c2;
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.01em;
+}
+
+/* Typography Enhancements */
+h1, h2, h3, h4, h5, h6, .fw-bolder, .fw-bold {
+    letter-spacing: -0.025em;
+}
+
+.tracking-tight {
+    letter-spacing: -0.04em !important;
+}
+
+.tracking-wide {
+    letter-spacing: 0.1em !important;
+}
+
+.text-balance {
+    text-wrap: balance;
+}
+
+.lh-relaxed {
+    line-height: 1.6;
+}
+
+/* Base Transition Component */
+.transition-base {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Primary Color Utilities Extension */
+.text-primary { color: var(--primary-color) !important; }
+.bg-primary { background-color: var(--primary-color) !important; }
+.bg-primary-subtle { background-color: var(--primary-subtle) !important; }
+.text-primary-emphasis { color: var(--primary-hover) !important; }
+.border-primary-subtle { border-color: var(--border-subtle) !important; }
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: var(--primary-hover) !important;
+    border-color: var(--primary-hover) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 122, 0, 0.35) !important;
+}
+
+/* Hover Links */
+.hover-primary {
+    transition: color 0.2s ease;
+}
+.hover-primary:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Feature Cards Interactive */
+.feature-card {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-bottom: 4px solid transparent !important;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08) !important;
+    border-bottom: 4px solid var(--primary-color) !important;
+}
+
+/* Utility Animations & Hovers */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+    transform: translateY(-4px);
+}
+
+.hover-tilt {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.hover-tilt:hover {
+    transform: rotate(6deg) scale(1.08);
+}
+
+.hero-img {
+    transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.hero-img:hover {
+    transform: scale(1.03);
+}
+
+.filter-blur {
+    filter: blur(60px);
+}
+
+/* Background decorations */
+.benefits-section {
+    transition: box-shadow 0.4s ease;
+}
+
+.benefits-section:hover {
+    box-shadow: 0 30px 60px rgba(255, 122, 0, 0.3) !important;
+}
+
+.glow-effect {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.4s ease, box-shadow 0.4s ease;
+}
+.benefits-section:hover .glow-effect {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+    transform: scale(1.15) rotate(-5deg);
+}
+
+/* Keyframe Animations */
+@keyframes slow-rotate {
+    from { transform: translate(20%, -30%) rotate(0deg); }
+    to { transform: translate(20%, -30%) rotate(360deg); }
+}
+
+.shape-rotate {
+    animation: slow-rotate 60s linear infinite;
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in-up 0.8s ease-out forwards;
+}
+
+/* Custom CTA Background */
+.custom-cta-bg {
+    background-image: radial-gradient(circle at 10% 20%, rgba(255,122,0,0.06) 0%, transparent 50%),
+                      radial-gradient(circle at 90% 80%, rgba(255,122,0,0.08) 0%, transparent 50%);
+}
